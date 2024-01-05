@@ -1,5 +1,9 @@
 import { useState, useEffect } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
+import logo from "../assets/img/logo.svg";
+import navIcon1 from "../assets/img/nav-icon1.svg";
+import navIcon2 from "../assets/img/nav-icon2.svg";
+import navIcon3 from "../assets/img/nav-icon3.svg";
 
 export default function NavBar() {
   const [activeLink, setActiveLink] = useState("home");
@@ -19,14 +23,14 @@ export default function NavBar() {
 
   const onUpdateActiveLink = (link: string) => {
     setActiveLink(link);
-  }
+  };
 
   return (
     <>
       <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
         <Container>
           <Navbar.Brand href="#home">
-            <img src={""} alt="logo" />
+            <img src={logo} alt="logo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
@@ -66,13 +70,13 @@ export default function NavBar() {
             <span className="navbar-text">
               <div className="social-icons">
                 <a href="https://www.linkedin.com/in/">
-                  <i className="fab fa-linkedin"></i>
+                  <img src={navIcon1} alt="logo" />
                 </a>
-                <a href="#">
-                  <i className="fab fa-github"></i>
+                <a href="https://www.linkedin.com/in/">
+                  <img src={navIcon2} alt="logo" />
                 </a>
-                <a href="#">
-                  <i className="fab fa-twitter"></i>
+                <a href="https://www.linkedin.com/in/">
+                  <img src={navIcon3} alt="logo" />
                 </a>
               </div>
               <button className="btn btn-primary">
