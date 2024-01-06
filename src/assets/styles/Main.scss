@@ -16,11 +16,16 @@
 }
 
 @import "./Components/NavBar.scss";
+@import "./Components/Banner.scss";
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+#root {
+  width: 100%;
 }
 
 html {
@@ -79,12 +84,12 @@ select:focus {
   outline: none;
 }
 
-@media (min-width: 1700px) {
-  main .container {
-    max-width: 100%;
-    padding: 0 150px;
-  }
-}
+// @media (min-width: 1700px) {
+//   main .container {
+//     max-width: 100%;
+//     padding: 0 150px;
+//   }
+// }
 
 p.success {
   color: green;
