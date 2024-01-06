@@ -69,7 +69,7 @@ export default function NavBar() {
             </Nav>
             <span className="navbar-text">
               <div className="social-icons">
-                <a href="https://www.linkedin.com/in/">
+                <a href="#">
                   <img src={navIcon1} alt="logo" />
                 </a>
                 <a href="https://www.linkedin.com/in/">
@@ -79,7 +79,7 @@ export default function NavBar() {
                   <img src={navIcon3} alt="logo" />
                 </a>
               </div>
-              <button className="btn btn-primary">
+              <button className="nav-btn">
                 <span> Let'Connect</span>
               </button>
             </span>
