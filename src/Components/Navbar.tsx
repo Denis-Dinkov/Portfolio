@@ -6,10 +6,6 @@ import MenuOverlay from "./MenuOverlay";
 
 const navLinks = [
   {
-    url: "/",
-    text: "Home",
-  },
-  {
     url: "/about",
     text: "About",
   },
@@ -22,27 +18,31 @@ const navLinks = [
     text: "Contact",
   },
 ];
+
 export default function Navbar() {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-10 border border-[#33353F] bg-[#121212] bg-opacity-100">
-      <div className="flex flex-wrap lg:py-4 items-center justify-between mx-auto px-4 py-2">
-        <Link to="" className="text-2xl md:text-5xl text-white font-semibold">
+    <nav className="fixed mx-auto border border-[#33353F] top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100">
+      <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
+        <Link
+          to={"/"}
+          className="text-2xl md:text-5xl text-white font-semibold"
+        >
           LOGO
         </Link>
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
             <button
               onClick={() => setNavbarOpen(true)}
-              className="flex items-center px-3 py-2 border rounded border-slate-200  text-slate-200 hover:text-white hover:border-white"
+              className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"
             >
               <MenuIcon className="h-5 w-5" />
             </button>
           ) : (
             <button
               onClick={() => setNavbarOpen(false)}
-              className="flex items-center px-3 py-2 border rounded border-slate-200  text-slate-200 hover:text-white hover:border-white"
+              className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"
             >
               <XIcon className="h-5 w-5" />
             </button>
@@ -58,7 +58,7 @@ export default function Navbar() {
           </ul>
         </div>
       </div>
-      {navbarOpen && <MenuOverlay links={navLinks} />}
+      {navbarOpen ? <MenuOverlay links={navLinks} /> : null}
     </nav>
   );
 }
