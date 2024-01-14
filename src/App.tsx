@@ -1,5 +1,6 @@
 import Navbar from "./Components/Navbar";
 import HeroSection from "./Components/HeroSection";
+import AchievmentSection from "./Components/AchievmentSection";
 import AboutSection from "./Components/AboutSection";
 import ProjectSection from "./Components/ProjectsSection";
 import EmailSection from "./Components/EmailSection";
@@ -12,6 +13,7 @@ function App() {
       <Navbar />
       <div className="container mt-24 mx-auto px-12 py-4">
         <HeroSection />
+        <AchievmentSection/>
         <AboutSection />
         <ProjectSection />
         <EmailSection />
