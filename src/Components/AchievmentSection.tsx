@@ -38,7 +38,7 @@ export default function AchievmentSection() {
                   return {
                     mass: 1,
                     friction: 100,
-                    tensions: 140 * (index + 1),
+                    tension: 140 * (index + 1),
                   };
                 }}
                 
