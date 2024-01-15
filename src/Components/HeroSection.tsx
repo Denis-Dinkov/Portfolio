@@ -1,4 +1,4 @@
-import Image from "../assets/images/hero-image.png";
+import Image from "../assets/images/test.png";
 import { TypeAnimation } from "react-type-animation";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -19,16 +19,7 @@ export default function HeroSection() {
             </span>
             <br></br>
             <TypeAnimation
-              sequence={[
-                "Judy",
-                1000,
-                "Web Developer",
-                1000,
-                "Mobile Developer",
-                1000,
-                "UI/UX Designer",
-                1000,
-              ]}
+              sequence={["Denis", 1000, "Web Developer", 1000]}
               wrapper="span"
               speed={50}
               repeat={Infinity}

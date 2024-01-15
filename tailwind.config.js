@@ -10,8 +10,8 @@ module.exports = {
     extend: {
       colors: {
         ...colors,
-        primary: colors.red,
-        secondary: colors.pink,
+        primary: colors.blue,
+        secondary: colors.blue,
         neutral: colors.gray,
       },
       backgroundImage: {
