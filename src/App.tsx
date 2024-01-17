@@ -14,7 +14,7 @@ function App() {
       className="font-inter flex min-h-screen flex-col bg-[#121211] "
     >
       <Navbar />
-      <div className="container mt-24 mx-auto px-12 py-4">
+      <div className="container mt-24 mx-auto px-12 ">
         <HeroSection />
         <AchievmentSection />
         <AboutSection />
