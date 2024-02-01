@@ -1,20 +1,19 @@
-import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 import { useState } from "react";
-import NavLink from "./NavLink";
 import { MenuIcon, XIcon } from "@heroicons/react/solid";
 import MenuOverlay from "./MenuOverlay";
 
 const navLinks = [
   {
-    url: "/about",
+    url: "about",
     text: "About",
   },
   {
-    url: "/projects",
+    url: "projects",
     text: "Projects",
   },
   {
-    url: "/contact",
+    url: "contact",
     text: "Contact",
   },
 ];
@@ -25,12 +24,13 @@ export default function Navbar() {
   return (
     <nav className="fixed mx-auto top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-90">
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
-        <Link
-          to={"/"}
-          className="text-2xl md:text-5xl text-white font-semibold"
+        <ScrollLink
+          to="hero-section"
+          smooth={true}
+          className="text-2xl md:text-5xl text-white font-semibold cursor-pointer"
         >
           Portfolio
-        </Link>
+        </ScrollLink>
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
             <button
@@ -52,7 +52,13 @@ export default function Navbar() {
           <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
             {navLinks.map((link, index) => (
               <li key={index}>
-                <NavLink url={link.url} text={link.text} />
+                <ScrollLink
+                  className="block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white cursor-pointer"
+                  to={link.url}
+                  smooth={true}
+                >
+                  {link.text}
+                </ScrollLink>
               </li>
             ))}
           </ul>

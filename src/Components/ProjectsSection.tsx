@@ -3,17 +3,17 @@ import ProjectCard from "./ProjectCard";
 import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
 
-import Project1 from "../assets/images/projects/1.png";
 import Project2 from "../assets/images/projects/2.png";
 import Project3 from "../assets/images/projects/3.png";
+import ReactQuiz from "../assets/images/projects/the-react-quiz.png";
 
 const projectsData = [
   {
     id: 1,
-    title: "Project 1",
+    title: "The React Quiz",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, laborum.",
-    image: Project1,
+      "Small react project where you can test your react knowledge. I made this project to learn more about react and useReducer hook.",
+    image: ReactQuiz,
     tag: ["All", "React"],
   },
   {
@@ -59,17 +59,17 @@ export default function ProjectSection() {
       </h2>
       <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
         <ProjectTag
-          onClick={handleTagChange}
+          onClick={() => handleTagChange(tag)}
           name="All"
           isSelected={tag === "All"}
         />
         <ProjectTag
-          onClick={handleTagChange}
+          onClick={() => handleTagChange(tag)}
           name="Web"
           isSelected={tag === "Web"}
         />
         <ProjectTag
-          onClick={handleTagChange}
+          onClick={() => handleTagChange(tag)}
           name="React"
           isSelected={tag === "React"}
         />
