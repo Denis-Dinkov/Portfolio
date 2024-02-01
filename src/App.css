@@ -25,3 +25,19 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+*::-webkit-scrollbar {
+  width: 2px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent; 
+  
+}
+ 
+*::-webkit-scrollbar-thumb {
+  background-color: purple;
+  border-radius: 8px;
+
+}
+
