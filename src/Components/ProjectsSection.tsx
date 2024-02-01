@@ -59,17 +59,17 @@ export default function ProjectSection() {
       </h2>
       <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
         <ProjectTag
-          onClick={() => handleTagChange(tag)}
+          onClick={() => handleTagChange("All")}
           name="All"
           isSelected={tag === "All"}
         />
         <ProjectTag
-          onClick={() => handleTagChange(tag)}
+          onClick={() => handleTagChange("Web")}
           name="Web"
           isSelected={tag === "Web"}
         />
         <ProjectTag
-          onClick={() => handleTagChange(tag)}
+          onClick={() => handleTagChange("React")}
           name="React"
           isSelected={tag === "React"}
         />

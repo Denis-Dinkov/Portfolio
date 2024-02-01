@@ -2,6 +2,7 @@ import Image from "../assets/images/test.png";
 import { TypeAnimation } from "react-type-animation";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { Link as ScrollLink } from "react-scroll";
 
 export default function HeroSection() {
   return (
@@ -30,12 +31,14 @@ export default function HeroSection() {
             voluptuous.
           </p>
           <div>
-            <Link
-              to="/#contact"
-              className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white"
+            <ScrollLink
+              to="contact"
+              offset={-80}
+              smooth={true}
+              className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white cursor-pointer"
             >
               Hire Me
-            </Link>
+            </ScrollLink>
             <Link
               to="/"
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"

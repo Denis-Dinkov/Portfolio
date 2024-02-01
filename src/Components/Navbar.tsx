@@ -27,6 +27,7 @@ export default function Navbar() {
         <ScrollLink
           to="hero-section"
           smooth={true}
+          offset={-100}
           className="text-2xl md:text-5xl text-white font-semibold cursor-pointer"
         >
           Portfolio
@@ -56,6 +57,7 @@ export default function Navbar() {
                   className="block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white cursor-pointer"
                   to={link.url}
                   smooth={true}
+                  offset={-80}
                 >
                   {link.text}
                 </ScrollLink>
