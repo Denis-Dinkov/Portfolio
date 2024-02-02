@@ -4,7 +4,6 @@ export default function ProjectCard({
   img,
   title,
   description,
-  tags,
 }: {
   img: string;
   title: string;

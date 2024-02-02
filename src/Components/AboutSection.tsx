@@ -4,7 +4,7 @@ import TabButton from "./TabButton";
 
 export default function AboutSection() {
   const [tab, setTab] = useState("skills");
-  const [isPending, startTransition] = useTransition();
+  const [, startTransition] = useTransition();
 
   const tabContent = [
     {

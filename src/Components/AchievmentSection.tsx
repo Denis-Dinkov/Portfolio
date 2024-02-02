@@ -1,4 +1,3 @@
-import React from "react";
 import AnimatedNumbers from "react-animated-numbers";
 
 const achievementsList = [
@@ -36,16 +35,12 @@ const AchievementsSection = () => {
                 {achievement.prefix}
                 <AnimatedNumbers
                   includeComma
-                  animateToNumber={parseInt(achievement.value)}
+                  animateToNumber={parseInt(
+                    achievement.value.replace(/,/g, "")
+                  )}
                   locale="en-US"
                   className="text-white text-4xl font-bold"
-                  configs={(_, index) => {
-                    return {
-                      mass: 10,
-                      friction: 500,
-                      tensions: 540 * (index + 1),
-                    };
-                  }}
+                 
                 />
                 {achievement.postfix}
               </h2>

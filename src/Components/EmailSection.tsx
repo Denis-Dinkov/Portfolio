@@ -2,13 +2,13 @@ import { Link } from "react-router-dom";
 import emailjs from "@emailjs/browser";
 import { useRef, useState } from "react";
 
-import loading from "../assets/loading.svg";
 import githubIcon from "../assets/github-icon.svg";
 import linkedinIcon from "../assets/linkedin-icon.svg";
 import SendEmailBtn from "./SendEmailBtn";
 
 export default function EmailSection() {
-  const form = useRef();
+  const form = useRef<HTMLFormElement | null>(null);
+
   const [emailStatus, setEmailStatus] = useState("none");
   const sendEmail = (e: { preventDefault: () => void }) => {
     e.preventDefault();
@@ -17,7 +17,7 @@ export default function EmailSection() {
       .sendForm(
         "service_ke60pn8",
         "template_j4vci88",
-        form.current,
+        form.current!,
         "qMn0xZsypFfK4A4Dt"
       )
       .then(

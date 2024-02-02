@@ -1,4 +1,4 @@
-import Image from "../assets/images/test.png";
+import Image from "../assets/images/hero-img.png";
 import { TypeAnimation } from "react-type-animation";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -59,8 +59,8 @@ export default function HeroSection() {
             <img
               src={Image}
               alt="hero image"
-              className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              width={300}
+              className="absolute transform -translate-x-1/2 -translate-y-1/3 top-1/4 left-1/2"
+              width={340}
               height={300}
             />
           </div>

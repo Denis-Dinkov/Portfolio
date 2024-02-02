@@ -1,7 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -31,13 +31,10 @@ body {
 }
 
 *::-webkit-scrollbar-track {
-  background: transparent; 
-  
+  background: transparent;
 }
- 
+
 *::-webkit-scrollbar-thumb {
   background-color: purple;
   border-radius: 8px;
-
 }
-
