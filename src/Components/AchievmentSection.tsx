@@ -1,4 +1,3 @@
-import React from "react";
 import AnimatedNumbers from "react-animated-numbers";
 
 const achievementsList = [
