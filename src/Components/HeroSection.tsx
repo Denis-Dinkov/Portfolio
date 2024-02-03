@@ -27,8 +27,8 @@ export default function HeroSection() {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            voluptuous.
+            Passionate and enthusiastic web developer on a journey to turn ideas
+            into interactive and user-friendly websites.
           </p>
           <div>
             <ScrollLink
@@ -37,7 +37,7 @@ export default function HeroSection() {
               smooth={true}
               className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white cursor-pointer"
             >
-              Hire Me
+              Contact Me
             </ScrollLink>
             <Link
               to="/"

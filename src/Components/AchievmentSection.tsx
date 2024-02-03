@@ -1,9 +1,10 @@
+import React from "react";
 import AnimatedNumbers from "react-animated-numbers";
 
 const achievementsList = [
   {
     metric: "Projects",
-    value: "100",
+    value: "5",
     postfix: "+",
   },
   {
@@ -35,12 +36,9 @@ const AchievementsSection = () => {
                 {achievement.prefix}
                 <AnimatedNumbers
                   includeComma
-                  animateToNumber={parseInt(
-                    achievement.value.replace(/,/g, "")
-                  )}
+                  animateToNumber={parseInt(achievement.value)}
                   locale="en-US"
                   className="text-white text-4xl font-bold"
-                 
                 />
                 {achievement.postfix}
               </h2>

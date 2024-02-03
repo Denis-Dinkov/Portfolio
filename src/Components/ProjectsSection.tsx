@@ -3,9 +3,9 @@ import ProjectCard from "./ProjectCard";
 import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
 
-import Project2 from "../assets/images/projects/2.png";
 import Project3 from "../assets/images/projects/3.png";
 import ReactQuiz from "../assets/images/projects/the-react-quiz.png";
+import Paralax from "../assets/images/projects/paralax.png";
 
 const projectsData = [
   {
@@ -15,22 +15,27 @@ const projectsData = [
       "Small react project where you can test your react knowledge. I made this project to learn more about react and useReducer hook.",
     image: ReactQuiz,
     tag: ["All", "React"],
+    liveDemo: "https://the-react-quiz.vercel.app/",
+    sourceCode: "",
   },
   {
     id: 2,
-    title: "Project 2",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, laborum.",
-    image: Project2,
-    tag: ["All", "React"],
+    title: "Travelo-Paralax",
+    description: "Parallax project, aiming to create an engaging scrolling experience with a cool parallax effect using stunning images from Zhangjiajie, China.",
+    image: Paralax,
+    tag: ["All", "Web"],
+    liveDemo: "https://travelo-parallax.vercel.app/",
+    sourceCode:
+      "https://github.com/Denis-Dinkov/Travelo-Parallax?tab=readme-ov-file",
   },
   {
     id: 3,
     title: "Project 3",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, laborum.",
+    description: "This is a project description",
     image: Project3,
-    tag: ["All", "React", "Web"],
+    tag: ["All", "Web"],
+    liveDemo: "https://www.google.com",
+    sourceCode: "https://www.google.com",
   },
 ];
 
@@ -89,6 +94,8 @@ export default function ProjectSection() {
               description={project.description}
               img={project.image}
               tags={project.tag}
+              liveDemo={project.liveDemo}
+              sourceCode={project.sourceCode}
             />
           </motion.li>
         ))}

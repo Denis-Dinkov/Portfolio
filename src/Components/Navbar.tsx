@@ -28,7 +28,7 @@ export default function Navbar() {
           to="hero-section"
           smooth={true}
           offset={-100}
-          className="text-2xl md:text-5xl text-white font-semibold cursor-pointer"
+          className="text-1xl md:text-4xl text-white font-semibold cursor-pointer"
         >
           Portfolio
         </ScrollLink>
