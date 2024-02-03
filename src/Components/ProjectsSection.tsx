@@ -21,7 +21,8 @@ const projectsData = [
   {
     id: 2,
     title: "Travelo-Paralax",
-    description: "Parallax project, aiming to create an engaging scrolling experience with a cool parallax effect using stunning images from Zhangjiajie, China.",
+    description:
+      "Parallax project, aiming to create an engaging scrolling experience with a cool parallax effect using stunning images from Zhangjiajie, China.",
     image: Paralax,
     tag: ["All", "Web"],
     liveDemo: "https://travelo-parallax.vercel.app/",
