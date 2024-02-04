@@ -3,9 +3,9 @@ import ProjectCard from "./ProjectCard";
 import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
 
-import Project3 from "../assets/images/projects/3.png";
 import ReactQuiz from "../assets/images/projects/the-react-quiz.png";
 import Paralax from "../assets/images/projects/paralax.png";
+import MovieMate from "../assets/images/projects/movie-mate.png";
 
 const projectsData = [
   {
@@ -31,10 +31,11 @@ const projectsData = [
   },
   {
     id: 3,
-    title: "Project 3",
-    description: "This is a project description",
-    image: Project3,
-    tag: ["All", "Web"],
+    title: "MovieMate",
+    description:
+      "I worked on the MovieMate project to practice my React skills. It's about selecting your favorite movies and adding them to a watchlist using an API.",
+    image: MovieMate,
+    tag: ["All", "React"],
     liveDemo: "https://www.google.com",
     sourceCode: "https://www.google.com",
   },

@@ -1,4 +1,4 @@
-import Image from "../assets/images/hero-img.png";
+import Image from "../assets/images/hero-img.webp";
 import { TypeAnimation } from "react-type-animation";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
