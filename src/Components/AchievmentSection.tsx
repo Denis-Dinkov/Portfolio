@@ -7,17 +7,14 @@ const achievementsList = [
     postfix: "+",
   },
   {
-    prefix: "~",
-    metric: "Users",
-    value: "100,000",
+    metric: "Commits",
+    value: "1000",
+    postfix: "+",
   },
+
   {
-    metric: "Awards",
-    value: "7",
-  },
-  {
-    metric: "Years",
-    value: "5",
+    metric: "Years Experience",
+    value: "2",
   },
 ];
 
