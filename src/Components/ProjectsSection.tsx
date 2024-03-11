@@ -65,13 +65,13 @@ const projectsData = [
 ];
 
 export default function ProjectSection() {
-  const [tag, setTag] = useState("All");
+  const [tag] = useState("All");
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
-  const handleTagChange = (tag: string) => {
-    setTag(tag);
-  };
+  // const handleTagChange = (tag: string) => {
+  //   setTag(tag);
+  // };
 
   const filteredProject = projectsData.filter((project) => {
     return project.tag.includes(tag);
