@@ -27,7 +27,7 @@ const projectsData = [
       "The project was developed to practice advanced React skills, such as React Router, Context API, and advanced patterns.",
     image: WorldWise,
     tag: ["All", "Web 2.0"],
-    liveDemo: "https://krypt-puce.vercel.app/",
+    liveDemo: "https://world-wise-chi-rust.vercel.app/",
     sourceCode: "https://github.com/Denis-Dinkov/WorldWise",
   },
   {
