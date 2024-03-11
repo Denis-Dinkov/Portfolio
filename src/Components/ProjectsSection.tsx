@@ -1,22 +1,34 @@
 import { useState, useRef } from "react";
 import ProjectCard from "./ProjectCard";
-import ProjectTag from "./ProjectTag";
+// import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
 
 import ReactQuiz from "../assets/images/projects/the-react-quiz.png";
 import Paralax from "../assets/images/projects/paralax.png";
 import MovieMate from "../assets/images/projects/movie-mate.png";
+import KryptImg from "../assets/images/projects/krypt.png";
+import WorldWise from "../assets/images/projects/worldwise.png";
 
 const projectsData = [
   {
     id: 1,
-    title: "The React Quiz",
+    title: "Krypt",
     description:
-      "Small react project where you can test your react knowledge. I made this project to learn more about react and useReducer hook.",
-    image: ReactQuiz,
-    tag: ["All", "React"],
-    liveDemo: "https://the-react-quiz.vercel.app/",
-    sourceCode: "",
+      "My first web 3.0 dApp for blockchain   transactions, I used React, Tailwind CSS, and Solidity for smart contracts.",
+    image: KryptImg,
+    tag: ["All", "Web 3.0"],
+    liveDemo: "https://krypt-puce.vercel.app/",
+    sourceCode: "https://github.com/Denis-Dinkov/Krypt",
+  },
+  {
+    id: 1,
+    title: "WorldWise",
+    description:
+      "The project was developed to practice advanced React skills, such as React Router, Context API, and advanced patterns.",
+    image: WorldWise,
+    tag: ["All", "Web 2.0"],
+    liveDemo: "https://krypt-puce.vercel.app/",
+    sourceCode: "https://github.com/Denis-Dinkov/WorldWise",
   },
   {
     id: 2,
@@ -30,12 +42,23 @@ const projectsData = [
       "https://github.com/Denis-Dinkov/Travelo-Parallax?tab=readme-ov-file",
   },
   {
+    id: 2,
+    title: "The React Quiz",
+    description:
+      "Small react project where you can test your react knowledge. I made this project to learn more about react and useReducer hook.",
+    image: ReactQuiz,
+    tag: ["All", "Web 2.0"],
+    liveDemo: "https://the-react-quiz.vercel.app/",
+    sourceCode: "",
+  },
+
+  {
     id: 3,
     title: "MovieMate",
     description:
       "I worked on the MovieMate project to practice my React skills. It's about selecting your favorite movies and adding them to a watchlist using an API.",
     image: MovieMate,
-    tag: ["All", "React"],
+    tag: ["All", "Web 2.0"],
     liveDemo: "https://www.google.com",
     sourceCode: "https://www.google.com",
   },
@@ -64,23 +87,23 @@ export default function ProjectSection() {
       <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:md-12">
         My Projects
       </h2>
-      <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
+      {/* <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
         <ProjectTag
           onClick={() => handleTagChange("All")}
           name="All"
           isSelected={tag === "All"}
         />
         <ProjectTag
-          onClick={() => handleTagChange("Web")}
-          name="Web"
-          isSelected={tag === "Web"}
+          onClick={() => handleTagChange("Web 2.0")}
+          name="Web 2"
+          isSelected={tag === "Web 2"}
         />
         <ProjectTag
-          onClick={() => handleTagChange("React")}
-          name="React"
-          isSelected={tag === "React"}
+          onClick={() => handleTagChange("Web 3.0")}
+          name="Web 3"
+          isSelected={tag === "Web 3"}
         />
-      </div>
+      </div> */}
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
         {filteredProject.map((project, index) => (
           <motion.li
